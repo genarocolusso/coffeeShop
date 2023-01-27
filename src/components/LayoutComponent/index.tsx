@@ -1,14 +1,16 @@
+import { Header } from "../Header";
+import * as S from  './styles';
+
 type LayoutPropsType = {
     children: React.ReactNode;
-
 }
 
 export const LayoutComponent = ({children}: LayoutPropsType) => { 
-return (
-    <div>
-        <div>Header</div>
+return ( 
+    <S.Container>
+        <Header/>
         {children}
-    </div>
+    </S.Container>
 )
 
 };
