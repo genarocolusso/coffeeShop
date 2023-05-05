@@ -8,8 +8,7 @@ In the project directory, you can run:
 ### ⚡️ Built With
 
 - [React](https://reactjs.org/)
-- [Typescript](https://www.typescriptlang.org/)
-- [React Query](https://react-query.tanstack.com/)
+- [Typescript](https://www.typescriptlang.org/) 
 - [Styled-Components](https://styled-components.com/) 
  
 
