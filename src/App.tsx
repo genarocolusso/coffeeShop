@@ -11,7 +11,6 @@ function App() {
       <BrowserRouter>
         <ThemeProvider theme={defaultTheme}>
           <GlobalStyle theme={defaultTheme} />
-
           <Router />
         </ThemeProvider>
       </BrowserRouter>
