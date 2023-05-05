@@ -8,6 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html{
+    background-color : #FAFAFA;
+}
  
 body,input,textarea,button { 
    

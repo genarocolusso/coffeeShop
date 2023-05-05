@@ -24,8 +24,14 @@ margin-bottom: 2rem;
   
 export const CoffeeListGrid = styled.div`
 display: grid; 
-grid-template-columns: repeat( 3, 1fr);
+grid-template-columns: repeat( 4, 1fr);
+gap: 2rem;
+margin: 0px auto;
 
+@media only screen and (max-width: 1108px) {
+
+grid-template-columns: repeat( 3, 1fr);
+}
 @media only screen and (max-width: 768px) {
 
   grid-template-columns: repeat( 2, 1fr);

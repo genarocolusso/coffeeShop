@@ -1,6 +1,7 @@
+import { CheckoutContainer } from "../../components/CheckoutContainer"
 
 
 export const Checkout = () => {
 
-    return  <div>Checkout</div>
+    return  <CheckoutContainer/>
 }
