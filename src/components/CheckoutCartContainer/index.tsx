@@ -2,7 +2,14 @@ import { Minus, Plus, Trash } from "phosphor-react";
 
 import * as S from "./styles";
 import { useCart } from "../../context";
-export const CheckoutCartContainer = () => {
+import { SubmitHandler, UseFormHandleSubmit } from "react-hook-form";
+import { Inputs } from "../CheckoutContainer";
+
+interface checkoutCartContainer {
+  handleSubmit: UseFormHandleSubmit<Inputs>;
+  onSubmit: SubmitHandler<Inputs>;
+}
+export const CheckoutCartContainer = ({ handleSubmit, onSubmit }: checkoutCartContainer) => {
   const { dispatch, state } = useCart();
   const Items = state.items;
 
@@ -91,7 +98,7 @@ export const CheckoutCartContainer = () => {
             }).format(state.totalPrice + 9)}
           </S.DetailPrice>
         </S.DetailTotal>
-        <S.DetailConfirm>Confirmar Pedido</S.DetailConfirm>
+        <S.DetailConfirm onClick={handleSubmit(onSubmit)}>Confirmar Pedido</S.DetailConfirm>
       </S.CheckoutDetails>
     </S.Container>
   );
